@@ -258,7 +258,7 @@ Use the following examples as reference. You can put your own [Jinja2](http://ji
 Append to `main.html`:
 
 ```html
-{% block extrahead %}
+{ % block extrahead % }
       <meta name="author" content="{{ page.meta.author }}">
 {% endblock %}
 ```
@@ -268,17 +268,17 @@ Append to `main.html`:
 Append to `main.html`:
 
 ```html
-{% block footer %}
+{ % block footer % }
 <hr>
-<p>{% if config.copyright %}
+<p>{ % if config.copyright % }
       <small>{{ config.copyright }}<br></small>
-{% endif %}
+{ % endif % }
 <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-{% if page.meta.revision_date %}
+{ % if page.meta.revision_date % }
       <small><br><i>Updated {{ page.meta.revision_date }}</i></small>
-{% endif %}
+{ % endif % }
 </p>
-{% endblock %}
+{ % endblock % }
 ```
 
 `page.meta.revision_date` can be set by using [meta-data (front-matter)](https://www.mkdocs.org/user-guide/writing-your-docs/#meta-data) at the beginning of your Markdown document or using [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin).
