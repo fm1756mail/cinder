@@ -6,7 +6,7 @@ VERSION = "1.2.0"
 setup(
     name="mkdocs-cinder",
     version=VERSION,
-    url="https://github.com/chrissimpkins/cinder",
+    url="https://github.com/fm1756mail/cinder",
     license="MIT",
     description="A clean responsive theme for the MkDocs static documentation site generator",
     author="Christopher Simpkins",
