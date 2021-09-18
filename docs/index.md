@@ -240,7 +240,7 @@ The numbers correspond to the key that you would like to use for that shortcut. 
 Create a new directory within your project (e.g., `cinder-theme-ext/`) and create `main.html`. Add the following line at the top of the HTML file.
 
 ```html
-{% extends "base.html" %}
+{ % extends "base.html" % }
 ```
 
 Instead of using `theme_dir: cinder` in `mkdocs.yml`, use:
