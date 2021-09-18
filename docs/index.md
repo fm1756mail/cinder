@@ -260,7 +260,7 @@ Append to `main.html`:
 ```html
 { % block extrahead % }
       <meta name="author" content="{{ page.meta.author }}">
-{% endblock %}
+{ % endblock % }
 ```
 
 #### Replacing footer
